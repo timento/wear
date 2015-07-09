@@ -1,0 +1,190 @@
+#container {
+    width: 100px;
+    height: 100px;
+}
+#navi, 
+#infoi {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#infoi {
+    z-index: -1;
+}
+
+.svg-container {
+  padding-bottom:67.3205033%;
+  position:relative;
+  background: rgba(179,220,237,1);
+	background: -moz-linear-gradient(top, rgba(179,220,237,1) 0%, rgba(188,224,238,1) 51%, rgba(41,184,229,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(179,220,237,1)), color-stop(51%, rgba(188,224,238,1)), color-stop(100%, rgba(41,184,229,1)));
+	background: -webkit-linear-gradient(top, rgba(179,220,237,1) 0%, rgba(188,224,238,1) 51%, rgba(41,184,229,1) 100%);
+	background: -o-linear-gradient(top, rgba(179,220,237,1) 0%, rgba(188,224,238,1) 51%, rgba(41,184,229,1) 100%);
+	background: -ms-linear-gradient(top, rgba(179,220,237,1) 0%, rgba(188,224,238,1) 51%, rgba(41,184,229,1) 100%);
+	background: linear-gradient(to bottom, rgba(179,220,237,1) 0%, rgba(188,224,238,1) 51%, rgba(41,184,229,1) 100%);
+}
+.svg-container__content {
+  position:absolute;
+  width:100%;
+  height:100%;
+  overflow:hidden
+}
+.svg-container__content svg {
+  width:100%;
+  height:100%
+}
+
+
+/* Pen for http://blog.legomushroom.com/2014/03/defining-advanced-animation-path/ */
+
+/* LEADERBOARD */
+/* CSS - Shea Parker */
+
+/********* BASE **********/
+*, *:before, *:after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body,html {
+    min-height:100%;
+}
+
+body{
+    background:#444;
+	overflow: hidden;
+}
+
+.leaderboard {
+    position:relative;
+    width:70%;
+    height:70%;
+    margin: 40px auto 0 auto;
+    padding:3%;
+}
+
+.leaderboard h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin:30px;
+    padding:0;
+    color: #ffffff;
+	font-family: calibri;
+	font-size: 96px;
+	text-shadow: 2px 2px #00A8EA;
+}
+
+.content {
+    position:relative;
+    width:70%;
+    margin:3px auto 0 auto;
+    min-width:300px;
+
+}
+
+.content ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+    border:5px solid #CCC;
+    background: rgba(40,40,40,0.75);
+}
+.content ul li{
+    position: relative;
+    color:#FFF;
+    font-family: calibri;
+	font-size: 54px;
+	font-weight: bold;
+    padding:2% 5%;
+    border-bottom: 1px solid #555;
+}
+
+.content ul li:last-child{
+    border-bottom:none;
+}
+
+.name{
+    font-weight:bold;	
+}
+.count{
+    display:inline-block;
+    float:right;
+    color:#000000;
+    font-weight:bold;
+}
+.count:after{
+    color:#CCC;
+    font-size:80%;
+    font-weight:normal;
+}
+
+
+/********* BLING **********/
+.content ul{
+    border-radius: 20px;
+}
+
+.red {
+	color: #FF0000;
+}
+
+.green {
+	color: #00FF00;
+}
+
+.yellow {
+	color: #FFFF00;
+}
+
+.blue {
+	color: #0000FF;
+}
+
+.animate {
+    -moz-animation: flashIt 0.2s ease 1;
+    -webkit-animation: flashIt 0.2s ease 1;
+    animation: flashIt 0.2s ease 1;
+}
+
+.animate .countold{
+    -moz-animation: spinIt 0.3s ease 1;
+    -webkit-animation: spinIt 0.3s ease 1;
+    animation: spinIt 0.3s ease 1;
+}
+
+
+@-moz-keyframes flashIt {
+    100% { opacity: 0; background-color: #FFF;}
+}
+@-webkit-keyframes flashIt {
+    100% { opacity: 0; background-color: #FFF;}
+}
+@keyframes flashIt {
+    100% { opacity: 0; }
+}
+
+@-moz-keyframes spinIt {
+    20% {-moz-transform: rotate(-10deg)}
+    40% {-moz-transform: rotate(10deg)}
+    60% {-moz-transform: rotate(-10deg)}
+    80% {-moz-transform: rotate(10deg)}
+    100% {-moz-transform: rotate(-10deg)}
+}
+@-webkit-keyframes spinIt {
+    20% {-webkit-transform: rotate(-10deg)}
+    40% {-webkit-transform: rotate(10deg)}
+    60% {-webkit-transform: rotate(-10deg)}
+    80% {-webkit-transform: rotate(10deg)}
+    100% {-webkit-transform: rotate(-10deg)}
+}
+@keyframes spinIt {
+     20% {transform: rotate(-10deg)}
+     40% {transform: rotate(10deg)}
+     60% {transform: rotate(-10deg)}
+     80% {transform: rotate(10deg)}
+     100% {transform: rotate(-10deg)}
+ }
